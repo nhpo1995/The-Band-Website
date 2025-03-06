@@ -24,7 +24,7 @@ function changeBackground() {
         "slider"
     ).style.backgroundImage = `url('${slides[index].image}')`;
     document.querySelector(".text-heading").textContent = slides[index].heading;
-    document.querySelector("text-description").textContent =
+    document.querySelector(".text-description").textContent =
         slides[index].description;
 }
 

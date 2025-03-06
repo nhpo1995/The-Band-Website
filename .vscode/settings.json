@@ -1,0 +1,7 @@
+{
+    "html.format.wrapAttributes": "force-aligned",
+    "html.format.wrapAttributesIndentSize": 120,
+    "editor.wordWrap": "on",
+    "editor.wordWrapColumn": 120,
+    "editor.formatOnSave": false
+}

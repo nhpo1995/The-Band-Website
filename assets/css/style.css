@@ -350,8 +350,8 @@ html {
     color: #fff;
     text-decoration: none;
     display: inline-block;
-    padding: 8px 16px;
     font-weight: 400;
+    cursor: pointer;
 }
 
 .btn:hover {
@@ -362,7 +362,8 @@ html {
 /* Contact form */
 
 .contact-form {
-    margin-top: 48px;
+    margin: 32px;
+    padding-bottom: 16px;
 }
 
 .contact-info {
@@ -391,7 +392,33 @@ html {
     color: #000;
 }
 
+/* Map section */
+
+.map-section img {
+    width: 100%;
+}
+
 #footer {
+    padding: 64px 16px;
+    text-align: center;
+}
+
+#footer .socials-list a {
+    font-size: 24px;
+    /* margin-right: 8px; */
+    color: rgba(0, 0, 0, 0.6);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#footer .copy-right a:hover,
+#footer .socials-list a:hover {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+#footer .copy-right {
+    margin-top: 15px;
+    color: rgba(0, 0, 0, 0.6);
 }
 
 /* Modal */
