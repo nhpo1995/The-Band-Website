@@ -1,4 +1,4 @@
-<!DOCTYPE html>https://fullstack.edu.vn/learning/html-css?id=4f6e0365-8a37-46e8-81bf-7624a1d43a86
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
@@ -6,6 +6,7 @@
         <title>The Band</title>
         <link rel="icon" href="./assets/img/favicon/icons8-90s-music-windows-11-color-96.png" type="image/png">
         <link rel="stylesheet" href="./assets/css/style.css">
+        <link rel="stylesheet" href="./assets/css/responsive.css">
         <link rel="stylesheet" href="./assets/font/themify-icons/themify-icons.css" />
         <link rel="stylesheet" href="./assets/font/fontawesome-free-6.7.2-web/css/all.min.css" />
     </head>
@@ -19,7 +20,7 @@
                     <li><a href="#tour">Tour</a></li>
                     <li><a href="#contact">Contact</a></li>
                     <li>
-                        <a class="icon-more" href="" style="pointer-events: none">
+                        <a class="icon-more" href="#">
                             More
                             <i class="nav-arrow-down fa-solid fa-sort-down"></i>
                         </a>
@@ -33,6 +34,10 @@
                 <!-- End: nav -->
 
                 <!-- Begin: search button -->
+                <div id="js-mobile-menu" class="mobile-menu-btn mobile-menu-icon">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+
                 <div class="search-btn">
                     <i class="search-icon ti-search"></i>
                 </div>
@@ -62,15 +67,15 @@
                         laboris nisi ut aliquip ex ea commodo consequat.commodo consequat.
                     </p>
                     <div class="row members-list">
-                        <div class="text-center col col-3">
+                        <div class="text-center col col-3 s-col-full my-16">
                             <div class="member-name">Name</div>
                             <img src="./assets/img/bandmember.jpg" alt="member photos" class="member-img" />
                         </div>
-                        <div class="text-center col col-3">
+                        <div class="text-center col col-3 s-col-full my-16">
                             <div class="member-name">Name</div>
                             <img src="./assets/img/bandmember.jpg" alt="member photos" class="member-img" />
                         </div>
-                        <div class="text-center col col-3">
+                        <div class="text-center col col-3 s-col-full my-16">
                             <div class="member-name">Name</div>
                             <img src="./assets/img/bandmember.jpg" alt="member photos" class="member-img" />
                         </div>
@@ -91,7 +96,7 @@
                         </div>
                         <!-- places -->
                         <div class="row places-list">
-                            <div class="col col-3">
+                            <div class="col col-3 s-col-full">
                                 <img src="./assets/img/places/newyork.jpg" alt="New york" class="place-img" />
                                 <div class="place-body">
                                     <h3 class="place-heading">New york</h3>
@@ -99,10 +104,10 @@
                                     <p class="place-description">
                                         Praesent tincidunt sed tellus ut rutrum sed vitae justo.
                                     </p>
-                                    <button class="js-buy-ticket btn btn-border-none">Buy Tickets</button>
+                                    <button class="js-buy-ticket btn btn-border-none s-full-width">Buy Tickets</button>
                                 </div>
                             </div>
-                            <div class="col col-3">
+                            <div class="col col-3 s-col-full">
                                 <img src="./assets/img/places/paris.jpg" alt="New york" class="place-img" />
                                 <div class="place-body">
                                     <h3 class="place-heading">Paris</h3>
@@ -110,10 +115,10 @@
                                     <p class="place-description">
                                         Praesent tincidunt sed tellus ut rutrum sed vitae justo.
                                     </p>
-                                    <button class="js-buy-ticket btn btn-border-none">Buy Tickets</button>
+                                    <button class="js-buy-ticket btn btn-border-none s-full-width">Buy Tickets</button>
                                 </div>
                             </div>
-                            <div class="col col-3">
+                            <div class="col col-3 s-col-full">
                                 <img src="./assets/img/places/sanfran.jpg" alt="New york" class="place-img" />
                                 <div class="place-body">
                                     <h3 class="place-heading">San Francisco</h3>
@@ -121,7 +126,7 @@
                                     <p class="place-description">
                                         Praesent tincidunt sed tellus ut rutrum sed vitae justo.
                                     </p>
-                                    <button class="js-buy-ticket btn btn-border-none">Buy Tickets</button>
+                                    <button class="js-buy-ticket btn btn-border-none s-full-width">Buy Tickets</button>
                                 </div>
                             </div>
                         </div>
@@ -133,37 +138,39 @@
                 <div id="contact" class="content-section">
                     <h2 class="section-heading">CONTACT</h2>
                     <p class="section-subheading">Fan? Drop a note!</p>
-                    <div class="row contact-form">
-                        <div class="col col-2 contact-info">
+                    <div class="row contact-form s-my-32">
+                        <div class="col col-2 contact-info s-col-full">
                             <p>
                                 <i class="fa-solid fa-location-dot mr-16"></i>
                                 Chicago, US
                             </p>
                             <p>
                                 <i class="fa-solid fa-phone mr-16"></i>
-                                Phone: +00 151515
+                                Phone: 
+                                <a href="tel:+00 151515">+00 151515</a>
                             </p>
                             <p>
                                 <i class="fa-solid fa-envelope mr-16"></i>
-                                Email: mail@mail.com
+                                Email: 
+                                <a href="mailto:mail@mail.com">mail@mail.com</a>
                             </p>
                         </div>
-                        <div class="col col-2">
+                        <div class="col col-2 s-col-full ">
                             <form action="">
                                 <div class="row">
-                                    <div class="col col-2">
+                                    <div class="col col-2 s-col-full">
                                         <input type="text" name="" id="" class="form-control" placeholder="Name" required />
                                     </div>
-                                    <div class="col col-2">
+                                    <div class="col col-2 s-col-full">
                                         <input type="email" name="" id="" class="form-control" placeholder="Email" required />
                                     </div>
                                 </div>
-                                <div class="row mt-8">
+                                <div class="row mt-8 s-mt-0">
                                     <div class="col col-1">
                                         <input type="text" name="" id="" class="form-control" placeholder="Message" required />
                                     </div>
                                 </div>
-                                <input class="mt-16 btn pull-right btn-border-none" type="submit" value="SEND" />
+                                <input class="mt-16 btn pull-right btn-border-none s-full-width" type="submit" value="SEND" />
                             </form>
                         </div>
                     </div>

@@ -59,3 +59,31 @@ modal.addEventListener("click", function (event) {
         closeModal();
     }
 });
+
+let header = document.getElementById('header');
+let mobileMenu = document.getElementById('js-mobile-menu');
+let currentHeight = header.clientHeight;
+
+mobileMenu.onclick = function (){
+    let isClose = header.clientHeight === currentHeight;
+    if(isClose){
+        header.style.height = 'auto';
+    } else{
+        header.style.height = null;
+    }
+}
+
+let menus = document.querySelectorAll('#nav li a[href*="#"]');
+
+for(let i = 0; i < menus.length; i++){
+    let menu = menus[i];
+    menu.onclick = function(event){
+        let isParentMenu = this.nextElementSibling && this.nextElementSibling.classList.contains('subnav');
+        if(isParentMenu){
+            event.preventDefault();
+        } else {
+            header.style.height = null;
+        }
+    }
+}
+
