@@ -5,7 +5,8 @@
     box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
     font-family: Helvetica, Arial, sans-serif;
     font-size: 15px;
     scroll-behavior: smooth;
@@ -56,7 +57,7 @@ html, body {
     margin-top: 16px;
 }
 
-.my-16{
+.my-16 {
     margin: 16px 0;
 }
 
@@ -99,7 +100,7 @@ html, body {
     z-index: 1;
 }
 
-#header .mobile-menu-btn{
+#header .mobile-menu-btn {
     position: absolute;
     top: 0;
     right: 0;
@@ -117,7 +118,7 @@ html, body {
     cursor: pointer;
 }
 
-#header .mobile-menu-btn:hover{
+#header .mobile-menu-btn:hover {
     background-color: #ccc;
     color: #000;
 }
@@ -144,7 +145,7 @@ html, body {
     display: inline-block;
 }
 
-#nav >li:first-child{
+#nav > li:first-child {
     display: inline-block;
 }
 
@@ -189,7 +190,6 @@ html, body {
     transition: opacity 0.3s ease, visibility 0.3s ease;
 }
 
-
 #nav .subnav a {
     color: #000;
     padding: 0 12px 0 38px;
@@ -209,7 +209,8 @@ html, body {
 #slider {
     margin-top: 46px;
     padding-top: 50%;
-    background: url("/assets/img/chicago.jpg") top center / cover no-repeat;
+    background: url("https://github.com/nhpo1995/The-Band-Website/blob/master/assets/img/chicago.jpg?raw=true")
+        top center / cover no-repeat;
     transition: background-image 0.5s ease-in-out;
     position: relative;
 }

@@ -1,16 +1,16 @@
 const slides = [
     {
-        image: "https://github.com/nhpo1995/The-Band-Website/blob/master/assets/img/chicago.jpg",
+        image: "https://github.com/nhpo1995/The-Band-Website/blob/master/assets/img/chicago.jpg?raw=true",
         heading: "Chicago",
         description: "Thank you, Chicago - A night we won't forget.",
     },
     {
-        image: "https://github.com/nhpo1995/The-Band-Website/blob/master/assets/img/ny.jpg",
+        image: "https://github.com/nhpo1995/The-Band-Website/blob/master/assets/img/ny.jpg?raw=true",
         heading: "New York",
         description: "The atmosphere in New York is lorem ipsum.",
     },
     {
-        image: "https://github.com/nhpo1995/The-Band-Website/blob/master/assets/img/la.jpg",
+        image: "https://github.com/nhpo1995/The-Band-Website/blob/master/assets/img/la.jpg?raw=true",
         heading: "Los Angeles",
         description: "We had the best time playing at Venice Beach!.",
     },
