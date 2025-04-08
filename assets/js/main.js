@@ -1,16 +1,16 @@
 const slides = [
     {
-        image: "/assets/img/chicago.jpg",
+        image: "https://github.com/nhpo1995/The-Band-Website/blob/master/assets/img/chicago.jpg",
         heading: "Chicago",
         description: "Thank you, Chicago - A night we won't forget.",
     },
     {
-        image: "/assets/img/ny.jpg",
+        image: "https://github.com/nhpo1995/The-Band-Website/blob/master/assets/img/ny.jpg",
         heading: "New York",
         description: "The atmosphere in New York is lorem ipsum.",
     },
     {
-        image: "/assets/img/la.jpg",
+        image: "https://github.com/nhpo1995/The-Band-Website/blob/master/assets/img/la.jpg",
         heading: "Los Angeles",
         description: "We had the best time playing at Venice Beach!.",
     },
@@ -60,30 +60,31 @@ modal.addEventListener("click", function (event) {
     }
 });
 
-let header = document.getElementById('header');
-let mobileMenu = document.getElementById('js-mobile-menu');
+let header = document.getElementById("header");
+let mobileMenu = document.getElementById("js-mobile-menu");
 let currentHeight = header.clientHeight;
 
-mobileMenu.onclick = function (){
+mobileMenu.onclick = function () {
     let isClose = header.clientHeight === currentHeight;
-    if(isClose){
-        header.style.height = 'auto';
-    } else{
+    if (isClose) {
+        header.style.height = "auto";
+    } else {
         header.style.height = null;
     }
-}
+};
 
 let menus = document.querySelectorAll('#nav li a[href*="#"]');
 
-for(let i = 0; i < menus.length; i++){
+for (let i = 0; i < menus.length; i++) {
     let menu = menus[i];
-    menu.onclick = function(event){
-        let isParentMenu = this.nextElementSibling && this.nextElementSibling.classList.contains('subnav');
-        if(isParentMenu){
+    menu.onclick = function (event) {
+        let isParentMenu =
+            this.nextElementSibling &&
+            this.nextElementSibling.classList.contains("subnav");
+        if (isParentMenu) {
             event.preventDefault();
         } else {
             header.style.height = null;
         }
-    }
+    };
 }
-
